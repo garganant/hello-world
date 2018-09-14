@@ -1,0 +1,18 @@
+T=int(input())
+def task(T):
+    i = 0
+    while i < T:
+        details = input().split()
+        N = int(details[0])
+        M = int(details[1])
+        X = int(details[2])
+        Y = int(details[3])
+        if N % X == 0 or (N - 1) % X == 0:
+            if M % Y == 0 or (M - 1) % Y == 0:
+                print('Chefirnemo')
+            else:
+                print('Profik')
+        else:
+            print('Profik')
+        i+=1
+task(T)
